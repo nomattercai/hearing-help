@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#4876FF"
+            android:text="声音放大"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/user_interface"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="#4876FF"
+            android:scaleType="centerCrop"
+            android:src="@drawable/man" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView3" />
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tabbar_height"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom">
+
+            <LinearLayout
+                android:id="@+id/ll_first"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/TabButton"
+                    android:drawableTop="@drawable/tab_first_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/TabButton"
+                    android:drawableTop="@drawable/tab_second_selector" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_third"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    style="@style/TabButton"
+                    android:drawableTop="@drawable/tab_third_selector" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</TabHost>

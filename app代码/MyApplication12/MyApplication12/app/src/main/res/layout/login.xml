@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="注册"
+        android:textColor="#ffffff"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        android:background="#4876FF"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/btn_back2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:scaleType="centerCrop"
+        android:background="#4876FF"/>
+
+    <EditText
+        android:id="@+id/et_3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:hint="手机号"
+        android:inputType="number"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="70dp"
+        android:padding="15dp" />
+
+    <EditText
+        android:id="@+id/et_4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:inputType="textPassword"
+        android:hint="密码"
+        android:layout_below="@+id/et_3"
+        android:layout_marginTop="15dp"
+        android:padding="15dp"/>
+
+
+    <Button
+        android:id="@+id/btn_zhuce"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:elevation="4dp"
+        android:foreground="?android:selectableItemBackground"
+        android:text="注册"
+        android:layout_marginTop="19dp"
+        android:padding="15dp"
+        android:background="@drawable/btn_shape"
+        android:paddingLeft="20dp"
+        android:layout_below="@+id/et_4"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

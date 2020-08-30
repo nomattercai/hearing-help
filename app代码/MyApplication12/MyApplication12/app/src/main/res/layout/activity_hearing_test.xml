@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/channel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="受测耳:"/>
+
+    <TextView
+        android:id="@+id/hertz_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前频率:"/>
+
+    <TextView
+        android:id="@+id/decibel_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="当前分贝:"/>
+
+    <Button
+        android:id="@+id/confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:foreground="?android:selectableItemBackground"
+        android:background="@drawable/btn_shape"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="听得到"/>
+
+</LinearLayout>

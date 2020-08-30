@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#aaaaff"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="305dp"
+        android:layout_height="30dp"
+        android:text="环境音识别关闭"
+        android:textSize="20sp"
+        android:gravity="center|bottom"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

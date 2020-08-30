@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">hearinghelp</string>
+
+    <string name="menu_first">声音放大</string>
+    <string name="menu_second">声音翻译</string>
+    <string name="menu_third">环境音识别</string>
+    <!--    <string name="please_input">请输入</string>
+    <string name="search">搜索</string>-->
+
+</resources>
